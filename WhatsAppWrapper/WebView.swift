@@ -3,9 +3,11 @@ import WebKit
 
 struct WebView: UIViewRepresentable {
     let viewModel: WebViewModel
+    /// Recibe -1 (pestaña anterior) o +1 (siguiente) al deslizar con dos dedos.
+    var onTwoFingerSwipe: (Int) -> Void = { _ in }
 
     func makeCoordinator() -> Coordinator {
-        Coordinator(viewModel: viewModel)
+        Coordinator(viewModel: viewModel, onTwoFingerSwipe: onTwoFingerSwipe)
     }
 
     func makeUIView(context: Context) -> WKWebView {
@@ -28,6 +30,14 @@ struct WebView: UIViewRepresentable {
 
         viewModel.webView = webView
 
+        for direction in [UISwipeGestureRecognizer.Direction.left, .right] {
+            let swipe = UISwipeGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTwoFingerSwipe(_:)))
+            swipe.direction = direction
+            swipe.numberOfTouchesRequired = 2
+            swipe.delegate = context.coordinator
+            webView.addGestureRecognizer(swipe)
+        }
+
         webView.addObserver(context.coordinator, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
         webView.addObserver(context.coordinator, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
         webView.addObserver(context.coordinator, forKeyPath: #keyPath(WKWebView.canGoBack), options: .new, context: nil)
@@ -37,7 +47,9 @@ struct WebView: UIViewRepresentable {
         return webView
     }
 
-    func updateUIView(_ uiView: WKWebView, context: Context) {}
+    func updateUIView(_ uiView: WKWebView, context: Context) {
+        context.coordinator.onTwoFingerSwipe = onTwoFingerSwipe
+    }
 
     static func dismantleUIView(_ uiView: WKWebView, coordinator: Coordinator) {
         uiView.removeObserver(coordinator, forKeyPath: #keyPath(WKWebView.estimatedProgress))
@@ -45,11 +57,22 @@ struct WebView: UIViewRepresentable {
         uiView.removeObserver(coordinator, forKeyPath: #keyPath(WKWebView.canGoBack))
     }
 
-    class Coordinator: NSObject, WKNavigationDelegate, WKUIDelegate {
+    class Coordinator: NSObject, WKNavigationDelegate, WKUIDelegate, UIGestureRecognizerDelegate {
         let viewModel: WebViewModel
+        var onTwoFingerSwipe: (Int) -> Void
 
-        init(viewModel: WebViewModel) {
+        init(viewModel: WebViewModel, onTwoFingerSwipe: @escaping (Int) -> Void) {
             self.viewModel = viewModel
+            self.onTwoFingerSwipe = onTwoFingerSwipe
+        }
+
+        @objc func handleTwoFingerSwipe(_ gesture: UISwipeGestureRecognizer) {
+            onTwoFingerSwipe(gesture.direction == .left ? 1 : -1)
+        }
+
+        // El deslizamiento convive con el scroll y el zoom de la página.
+        func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+            true
         }
 
         override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {

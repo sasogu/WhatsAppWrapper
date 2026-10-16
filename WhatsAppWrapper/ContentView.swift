@@ -1,30 +1,46 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection = WebService.all.first?.id ?? ""
+
     var body: some View {
-        TabView {
+        TabView(selection: $selection) {
             ForEach(WebService.all) { service in
-                ServiceView(service: service)
+                ServiceView(service: service, onTwoFingerSwipe: switchTab)
                     .tabItem {
                         Label(service.name, systemImage: service.systemImage)
                     }
+                    .tag(service.id)
             }
+        }
+    }
+
+    private func switchTab(by offset: Int) {
+        let services = WebService.all
+        guard let index = services.firstIndex(where: { $0.id == selection }) else { return }
+        let target = index + offset
+        guard services.indices.contains(target) else { return }
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+        withAnimation {
+            selection = services[target].id
         }
     }
 }
 
 struct ServiceView: View {
     @State private var viewModel: WebViewModel
+    let onTwoFingerSwipe: (Int) -> Void
 
-    init(service: WebService) {
+    init(service: WebService, onTwoFingerSwipe: @escaping (Int) -> Void) {
         _viewModel = State(initialValue: WebViewModel(service: service))
+        self.onTwoFingerSwipe = onTwoFingerSwipe
     }
 
     var body: some View {
         VStack(spacing: 0) {
             toolbar
             ZStack {
-                WebView(viewModel: viewModel)
+                WebView(viewModel: viewModel, onTwoFingerSwipe: onTwoFingerSwipe)
 
                 if let error = viewModel.error {
                     errorOverlay(error)
