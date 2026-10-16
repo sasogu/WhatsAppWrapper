@@ -41,12 +41,6 @@ struct WebView: UIViewRepresentable {
     class Coordinator: NSObject, WKNavigationDelegate, WKUIDelegate {
         let viewModel: WebViewModel
 
-        private let metaHostSuffixes = [
-            "whatsapp.com",
-            "whatsapp.net",
-            "fbcdn.net"
-        ]
-
         init(viewModel: WebViewModel) {
             self.viewModel = viewModel
         }
@@ -81,7 +75,7 @@ struct WebView: UIViewRepresentable {
                 return
             }
 
-            if metaHostSuffixes.contains(where: { host.hasSuffix($0) }) {
+            if viewModel.service.allowedHostSuffixes.contains(where: { host.hasSuffix($0) }) {
                 decisionHandler(.allow)
                 return
             }

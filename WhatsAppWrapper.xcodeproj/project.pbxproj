@@ -12,6 +12,7 @@
 		A4F1DB4AC03B8D34340CE64E /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9F209E8AF8FD9EA05E561 /* WebViewModel.swift */; };
 		C66969498223FEFB5D3A5227 /* WhatsAppWrapperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BC519D8611E0273DF6709D /* WhatsAppWrapperApp.swift */; };
 		CBF54E22642400B40BE56C3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72134FB928C538F6A991C5C /* Foundation.framework */; };
+		5A1C0FFEE0A55E7500000002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1C0FFEE0A55E7500000001 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D72134FB928C538F6A991C5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D8025E6CD55F446805243386 /* WebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebView.swift; path = WhatsAppWrapper/WebView.swift; sourceTree = "<group>"; };
 		E2A9F209E8AF8FD9EA05E561 /* WebViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebViewModel.swift; path = WhatsAppWrapper/WebViewModel.swift; sourceTree = "<group>"; };
+		5A1C0FFEE0A55E7500000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = WhatsAppWrapper/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 				243D808C7DA0A98CB6E7CD34 /* ContentView.swift */,
 				D8025E6CD55F446805243386 /* WebView.swift */,
 				E2A9F209E8AF8FD9EA05E561 /* WebViewModel.swift */,
+				5A1C0FFEE0A55E7500000001 /* Assets.xcassets */,
 			);
 			name = WhatsAppWrapper;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1C0FFEE0A55E7500000002 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

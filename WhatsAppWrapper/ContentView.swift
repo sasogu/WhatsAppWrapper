@@ -1,14 +1,30 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var viewModel = WebViewModel()
+    var body: some View {
+        TabView {
+            ForEach(WebService.all) { service in
+                ServiceView(service: service)
+                    .tabItem {
+                        Label(service.name, systemImage: service.systemImage)
+                    }
+            }
+        }
+    }
+}
+
+struct ServiceView: View {
+    @State private var viewModel: WebViewModel
+
+    init(service: WebService) {
+        _viewModel = State(initialValue: WebViewModel(service: service))
+    }
 
     var body: some View {
         VStack(spacing: 0) {
             toolbar
             ZStack {
                 WebView(viewModel: viewModel)
-                    .ignoresSafeArea(.all, edges: .bottom)
 
                 if let error = viewModel.error {
                     errorOverlay(error)
