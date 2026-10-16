@@ -8,29 +8,16 @@ struct WebService: Identifiable, Hashable {
     let url: URL
     let allowedHostSuffixes: [String]
 
-    static let all: [WebService] = [
-        WebService(
-            id: "whatsapp",
-            name: "WhatsApp",
-            systemImage: "message",
-            url: URL(string: "https://web.whatsapp.com")!,
-            allowedHostSuffixes: ["whatsapp.com", "whatsapp.net", "fbcdn.net"]
-        ),
-        WebService(
-            id: "snappymail",
-            name: "Correo",
-            systemImage: "envelope",
-            url: URL(string: "https://mail.example.org/")!,
-            allowedHostSuffixes: ["example.org"]
-        ),
-        WebService(
-            id: "tasks",
-            name: "Tareas",
-            systemImage: "checklist",
-            url: URL(string: "https://tasks.example.org/")!,
-            allowedHostSuffixes: ["example.org"]
-        )
-    ]
+    static let whatsapp = WebService(
+        id: "whatsapp",
+        name: "WhatsApp",
+        systemImage: "message",
+        url: URL(string: "https://web.whatsapp.com")!,
+        allowedHostSuffixes: ["whatsapp.com", "whatsapp.net", "fbcdn.net"]
+    )
+
+    // Las pestañas personales se definen en Services.local.swift (fuera de git).
+    static let all: [WebService] = [whatsapp] + local
 }
 
 @Observable

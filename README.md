@@ -21,6 +21,16 @@ Carga `https://web.whatsapp.com` en un WKWebView con User-Agent de Safari de esc
 - iPadOS 17.0+ / iOS 17.0+
 - Apple ID para firma (gratuita)
 
+## Pestañas
+
+La app muestra una pestaña por servicio web. WhatsApp viene incluida; las demás se definen en `WhatsAppWrapper/Services.local.swift`, que no se sube a git. Antes de compilar por primera vez:
+
+```sh
+cp WhatsAppWrapper/Services.local.example.swift WhatsAppWrapper/Services.local.swift
+```
+
+Cada pestaña indica nombre, icono SF Symbol, URL inicial y dominios que se abren dentro de la app (el resto va a Safari).
+
 ## Compilar
 
 Abrir `WhatsAppWrapper.xcodeproj` en Xcode, seleccionar el dispositivo en el menu y pulsar Run (Cmd+R).

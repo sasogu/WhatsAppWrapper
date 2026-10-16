@@ -13,6 +13,7 @@
 		C66969498223FEFB5D3A5227 /* WhatsAppWrapperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BC519D8611E0273DF6709D /* WhatsAppWrapperApp.swift */; };
 		CBF54E22642400B40BE56C3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72134FB928C538F6A991C5C /* Foundation.framework */; };
 		5A1C0FFEE0A55E7500000002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1C0FFEE0A55E7500000001 /* Assets.xcassets */; };
+		5A1C0FFEE0A55E7500000004 /* Services.local.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1C0FFEE0A55E7500000003 /* Services.local.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D8025E6CD55F446805243386 /* WebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebView.swift; path = WhatsAppWrapper/WebView.swift; sourceTree = "<group>"; };
 		E2A9F209E8AF8FD9EA05E561 /* WebViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebViewModel.swift; path = WhatsAppWrapper/WebViewModel.swift; sourceTree = "<group>"; };
 		5A1C0FFEE0A55E7500000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = WhatsAppWrapper/Assets.xcassets; sourceTree = "<group>"; };
+		5A1C0FFEE0A55E7500000003 /* Services.local.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Services.local.swift; path = WhatsAppWrapper/Services.local.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 				243D808C7DA0A98CB6E7CD34 /* ContentView.swift */,
 				D8025E6CD55F446805243386 /* WebView.swift */,
 				E2A9F209E8AF8FD9EA05E561 /* WebViewModel.swift */,
+				5A1C0FFEE0A55E7500000003 /* Services.local.swift */,
 				5A1C0FFEE0A55E7500000001 /* Assets.xcassets */,
 			);
 			name = WhatsAppWrapper;
@@ -163,6 +166,7 @@
 				713A1402868064C2369EFE19 /* ContentView.swift in Sources */,
 				01016881F7877C99BF704BCE /* WebView.swift in Sources */,
 				A4F1DB4AC03B8D34340CE64E /* WebViewModel.swift in Sources */,
+				5A1C0FFEE0A55E7500000004 /* Services.local.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

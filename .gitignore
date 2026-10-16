@@ -41,3 +41,6 @@ fastlane/test_output
 # OS
 .DS_Store
 Thumbs.db
+
+# Pestañas personales
+WhatsAppWrapper/Services.local.swift
