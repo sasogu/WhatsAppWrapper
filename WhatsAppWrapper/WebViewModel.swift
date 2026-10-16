@@ -22,6 +22,13 @@ struct WebService: Identifiable, Hashable {
             systemImage: "envelope",
             url: URL(string: "https://mail.example.org/")!,
             allowedHostSuffixes: ["example.org"]
+        ),
+        WebService(
+            id: "tasks",
+            name: "Tareas",
+            systemImage: "checklist",
+            url: URL(string: "https://tasks.example.org/")!,
+            allowedHostSuffixes: ["example.org"]
         )
     ]
 }
