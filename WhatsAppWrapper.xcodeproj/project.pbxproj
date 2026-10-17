@@ -8,26 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		01016881F7877C99BF704BCE /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8025E6CD55F446805243386 /* WebView.swift */; };
+		409B190E8700F02225844F48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72134FB928C538F6A991C5C /* Foundation.framework */; };
+		5A1C0FFEE0A55E7500000002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1C0FFEE0A55E7500000001 /* Assets.xcassets */; };
 		713A1402868064C2369EFE19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243D808C7DA0A98CB6E7CD34 /* ContentView.swift */; };
+		83BE8FD66CE576651D418AB7 /* WebServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EF2B7DF1FBAFA9D663ECA /* WebServicesUITests.swift */; };
+		8866871950925828232D0A1E /* WebServicesDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7E0273E26E7F07FC840859 /* WebServicesDefaults.swift */; };
 		A4F1DB4AC03B8D34340CE64E /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9F209E8AF8FD9EA05E561 /* WebViewModel.swift */; };
 		C66969498223FEFB5D3A5227 /* WhatsAppWrapperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BC519D8611E0273DF6709D /* WhatsAppWrapperApp.swift */; };
 		CBF54E22642400B40BE56C3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72134FB928C538F6A991C5C /* Foundation.framework */; };
-		5A1C0FFEE0A55E7500000002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1C0FFEE0A55E7500000001 /* Assets.xcassets */; };
-		5A1C0FFEE0A55E7500000004 /* Services.local.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1C0FFEE0A55E7500000003 /* Services.local.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9BBB979DA79E33DA122BF256 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 103A42B6D1A9ABF381790B33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CE794A584DBE5AD4C55A714;
+			remoteInfo = WhatsAppWrapper;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		07F45519DB3C2F785212442D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		243D808C7DA0A98CB6E7CD34 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = WhatsAppWrapper/ContentView.swift; sourceTree = "<group>"; };
+		292EF2B7DF1FBAFA9D663ECA /* WebServicesUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WebServicesUITests.swift; sourceTree = "<group>"; };
+		3C7E0273E26E7F07FC840859 /* WebServicesDefaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WebServicesDefaults.swift; sourceTree = DERIVED_FILE_DIR; };
+		5A1C0FFEE0A55E7500000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = WhatsAppWrapper/Assets.xcassets; sourceTree = "<group>"; };
 		A0BC519D8611E0273DF6709D /* WhatsAppWrapperApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhatsAppWrapperApp.swift; path = WhatsAppWrapper/WhatsAppWrapperApp.swift; sourceTree = "<group>"; };
 		A0E1BF36ED7BA1D1ECFC4C74 /* WhatsAppWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsAppWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72134FB928C538F6A991C5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D8025E6CD55F446805243386 /* WebView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebView.swift; path = WhatsAppWrapper/WebView.swift; sourceTree = "<group>"; };
 		E2A9F209E8AF8FD9EA05E561 /* WebViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebViewModel.swift; path = WhatsAppWrapper/WebViewModel.swift; sourceTree = "<group>"; };
-		5A1C0FFEE0A55E7500000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = WhatsAppWrapper/Assets.xcassets; sourceTree = "<group>"; };
-		5A1C0FFEE0A55E7500000003 /* Services.local.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Services.local.swift; path = WhatsAppWrapper/Services.local.swift; sourceTree = "<group>"; };
+		FE7BE49B7F94ED820BBB0584 /* WhatsAppWrapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsAppWrapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D2AC631CC042EB1FC8313E23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409B190E8700F02225844F48 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EB785C99133729F4E4F05E80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,8 +69,9 @@
 				243D808C7DA0A98CB6E7CD34 /* ContentView.swift */,
 				D8025E6CD55F446805243386 /* WebView.swift */,
 				E2A9F209E8AF8FD9EA05E561 /* WebViewModel.swift */,
-				5A1C0FFEE0A55E7500000003 /* Services.local.swift */,
 				5A1C0FFEE0A55E7500000001 /* Assets.xcassets */,
+				07F45519DB3C2F785212442D /* Info.plist */,
+				3C7E0273E26E7F07FC840859 /* WebServicesDefaults.swift */,
 			);
 			name = WhatsAppWrapper;
 			sourceTree = "<group>";
@@ -63,6 +87,7 @@
 		693C7792A86E9335ECD952EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				FE7BE49B7F94ED820BBB0584 /* WhatsAppWrapperUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,7 +99,17 @@
 				0EC3DBD15F1802B334F6577B /* Frameworks */,
 				0C8F1C91669FB1FE964CAC05 /* WhatsAppWrapper */,
 				EEADD300BD7AB555BC246E6F /* Products */,
+				B2C4A4F8CB268EF9261D206C /* tests */,
 			);
+			sourceTree = "<group>";
+		};
+		B2C4A4F8CB268EF9261D206C /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				292EF2B7DF1FBAFA9D663ECA /* WebServicesUITests.swift */,
+			);
+			name = tests;
+			path = tests;
 			sourceTree = "<group>";
 		};
 		D7B51B50B070549335EF291A /* iOS */ = {
@@ -100,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C57ED3FD1F7ECDD9DAEFB6B /* Build configuration list for PBXNativeTarget "WhatsAppWrapper" */;
 			buildPhases = (
+				F14BEED91B48CBBA3264EA4E /* Import optional legacy web services */,
 				E1A199411BD7F276721C2219 /* Sources */,
 				EB785C99133729F4E4F05E80 /* Frameworks */,
 				B2F8EE02ED49F7F286781526 /* Resources */,
@@ -112,6 +148,24 @@
 			productName = WhatsAppWrapper;
 			productReference = A0E1BF36ED7BA1D1ECFC4C74 /* WhatsAppWrapper.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6E0283BA0FCC14F6AB6E6AC2 /* WhatsAppWrapperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 068BCC30F3346B8A57122945 /* Build configuration list for PBXNativeTarget "WhatsAppWrapperUITests" */;
+			buildPhases = (
+				47EA00841E60EB864267DAED /* Sources */,
+				D2AC631CC042EB1FC8313E23 /* Frameworks */,
+				56F21C21DD92F2AF4197AEDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D46A3D7F446FB32C6DCF470 /* PBXTargetDependency */,
+			);
+			name = WhatsAppWrapperUITests;
+			productName = WhatsAppWrapperUITests;
+			productReference = FE7BE49B7F94ED820BBB0584 /* WhatsAppWrapperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -130,11 +184,12 @@
 			};
 			buildConfigurationList = 5BEBCE44DC5196520593C0D0 /* Build configuration list for PBXProject "WhatsAppWrapper" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
+			developmentRegion = es;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 9E19129E8398E521A0ED80A0;
 			productRefGroup = 693C7792A86E9335ECD952EA /* Products */;
@@ -142,11 +197,19 @@
 			projectRoot = "";
 			targets = (
 				1CE794A584DBE5AD4C55A714 /* WhatsAppWrapper */,
+				6E0283BA0FCC14F6AB6E6AC2 /* WhatsAppWrapperUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		56F21C21DD92F2AF4197AEDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2F8EE02ED49F7F286781526 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,7 +220,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F14BEED91B48CBBA3264EA4E /* Import optional legacy web services */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/WhatsAppWrapper",
+			);
+			name = "Import optional legacy web services";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/WebServicesDefaults.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\nlegacy=\"${SRCROOT}/WhatsAppWrapper/Services.local.swift\"\nfallback=\"${SRCROOT}/WhatsAppWrapper/Services.local.example.swift\"\noutput=\"${DERIVED_FILE_DIR}/WebServicesDefaults.swift\"\nsource=\"$fallback\"\nif [ -f \"$legacy\" ]; then source=\"$legacy\"; fi\nif ! /usr/bin/cmp -s \"$source\" \"$output\"; then\n  /bin/cp \"$source\" \"$output\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		47EA00841E60EB864267DAED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BE8FD66CE576651D418AB7 /* WebServicesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1A199411BD7F276721C2219 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,11 +261,20 @@
 				713A1402868064C2369EFE19 /* ContentView.swift in Sources */,
 				01016881F7877C99BF704BCE /* WebView.swift in Sources */,
 				A4F1DB4AC03B8D34340CE64E /* WebViewModel.swift in Sources */,
-				5A1C0FFEE0A55E7500000004 /* Services.local.swift in Sources */,
+				8866871950925828232D0A1E /* WebServicesDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D46A3D7F446FB32C6DCF470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WhatsAppWrapper;
+			target = 1CE794A584DBE5AD4C55A714 /* WhatsAppWrapper */;
+			targetProxy = 9BBB979DA79E33DA122BF256 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		08A2FBC23DC7C870C129EA15 /* Release */ = {
@@ -184,7 +288,10 @@
 				DEVELOPMENT_TEAM = S24TY8343A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatsAppWrapper/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "EduWeb";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Acceder a las webs que añadas de tu red local.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -252,6 +359,35 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		69276E85340BB705B957ABB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "es.samuelsoriano.whatsapp-wrapper.uitests";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WhatsAppWrapper;
+			};
+			name = Debug;
+		};
+		C967C756331E005FF3DBA21C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "es.samuelsoriano.whatsapp-wrapper.uitests";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WhatsAppWrapper;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -327,7 +463,10 @@
 				DEVELOPMENT_TEAM = S24TY8343A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatsAppWrapper/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "EduWeb";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Acceder a las webs que añadas de tu red local.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -347,6 +486,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		068BCC30F3346B8A57122945 /* Build configuration list for PBXNativeTarget "WhatsAppWrapperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C967C756331E005FF3DBA21C /* Release */,
+				69276E85340BB705B957ABB5 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5BEBCE44DC5196520593C0D0 /* Build configuration list for PBXProject "WhatsAppWrapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

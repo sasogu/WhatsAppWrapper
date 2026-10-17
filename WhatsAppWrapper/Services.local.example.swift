@@ -1,7 +1,8 @@
 import Foundation
 
-// Copia este fichero como Services.local.swift y añade tus pestañas.
-// Services.local.swift está en .gitignore para no publicar URLs privadas.
+// Configuración vacía para instalaciones nuevas. Las webs se añaden en la app.
+// El build admite Services.local.swift como importación de configuraciones antiguas;
+// está en .gitignore para no publicar URLs privadas.
 extension WebService {
     static let local: [WebService] = [
         // WebService(

@@ -1,0 +1,25 @@
+name: eduweb
+description: Les teues webs en pestanyes, en Android, iPad i iPhone.
+publish_to: none
+version: 0.3.0+3
+environment:
+  sdk: ^3.9.2
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  shared_preferences: ^2.5.3
+  webview_flutter: ^4.13.0
+  webview_flutter_android: ^4.10.0
+  webview_flutter_wkwebview: ^3.23.0
+  url_launcher: ^6.3.2
+  file_picker: ^10.3.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+flutter:
+  uses-material-design: true

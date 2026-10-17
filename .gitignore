@@ -44,3 +44,6 @@ Thumbs.db
 
 # Pestañas personales
 WhatsAppWrapper/Services.local.swift
+
+# Workspace del codi Flutter per a iOS
+!flutter_app/ios/Runner.xcworkspace/
